@@ -73,7 +73,7 @@ function printNum()         //it's 12
     console.log("1")        //B
     console.log("2")        //C
     console.log("3")        //D
-    console.log("4")
+    console.log("4")        //Done
 }
 function printAlpha()
 {
@@ -300,4 +300,3 @@ function cc()
     console.log("4")
 }
 */
-

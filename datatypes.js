@@ -1,13 +1,15 @@
-// //datatypes
-// // 2 types of datatypes - 1.primitive data type (Numbers-1,2,3,1,1, String- "Rajan", boolean- true and false)
-// //                        2.Non primitive data types(object, array, etc)
-// // mostly data are stored into variable.for ex: Numbers, String, boolean, undefined
-// // Type coercion (auto-conversion)
-// //conditions
-// //loops
-// object {data of different primitive data typess}
+/*13th March
+datatypes
+ 2 types of datatypes - 1.primitive data type (Numbers-1,2,3,1,1, String- "Rajan", boolean- true and false)
+                        2.Non primitive data types(object, array, etc)
+//mostly data are stored into variable.for ex: Numbers, String, boolean, undefined
+//Type coercion (auto-conversion)
+//conditions
+//loops
+//object {data of different primitive data typess}
 
-// //1.boolean
+/*
+1.boolean
     //var isvalid = "Gaurav";
     //console.log(isvalid)   //Gaurav
 
@@ -28,6 +30,8 @@
    
    //var name;
    //console.log(name)       //undefined
+*/
+
 
 //object
 //var variable_name = {key: value,key2: value2,....,key10:value10}
@@ -368,7 +372,8 @@ do
 1)first code gets executed
 2)condition is checked
 3)go to 1 if condition is true,if condition is false then execution is stopped and get out of the loop
-*/
+*/ 
+//13th march end
 
 //count=3
 //var cc;
@@ -402,6 +407,7 @@ do
 //{
 //    console.log("h4")
 //}
+
 
 /*3.for loop:-
 for(expression-1;expression-2;expression-3)              //exprresion-1 is initialization,initialize a variable,using this we can control no.of execution,e.g count=3
@@ -730,6 +736,7 @@ function cc()
     console.log("4")
 }
 */
+
 
 
 

@@ -11,10 +11,12 @@
 //console.log(student.isGraduated)
 //console.log(student[12])  //{Name:'Gaurav',Address:'Google',RollNumber:'12',isGraduated:false}|Gaurav|Google|12|true|123
 
-//var student={Name:"Gaurav",Address:"Google",RollNumber:12,isGraduated:true,12:123};
-//console.log(student)
-//console.log(student.Name)
-//console.log(student.Address) 
-//console.log(student.RollNumber)
-//console.log(student.isGraduated)
-//console.log(student[12])
+/*
+var student={Name:"Gaurav",Address:"Google",RollNumber:12,isGraduated:true,12:123};
+console.log(student)
+console.log(student.Name)
+console.log(student.Address) 
+console.log(student.RollNumber)
+console.log(student.isGraduated)
+console.log(student[12])
+*/

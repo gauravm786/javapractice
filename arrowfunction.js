@@ -311,7 +311,7 @@ var student=
 student.getName("Mishra")
 */
 
-/*                                        //Gaurav Mishra
+ /*                                       //Gaurav Mishra
 var student=
 {
     Name:"Gaurav",
@@ -336,31 +336,10 @@ var fullname=student.getName("Mishra")
 console.log(fullname)
 */
 
-/*
-var student=                              //undefined Mishra
-{
-    Name:"Gaurav",
-    Address:"Google",
-    RollNumber:12,
-    isGraduated:true,
-    12:123,
-    details: function()
-    {
-       console.log(this.Name)
-       console.log(this.Address)
-       console.log(this.RollNumber)
-       console.log(this.isGraduated)
-       console.log(this[12])
-    },
-    getName: (LastName)=>
-    {
-        return this.Name+" "+LastName
-    }
-};
-var fullname=student.getName("Mishra")
-console.log(fullname)
-*/
 
+
+
+/*
 var student=                              //undefined Mishra
 {
     Name:"Gaurav",
@@ -385,3 +364,34 @@ var fullname=student.getName("Mishra")
 console.log(fullname)
 var hi=this.name()
 console.log(hi)
+*/
+
+/*
+let nums = [3, 5, 7]
+let squares = nums.map(function (n) {
+  return n * n
+})
+console.log(squares)
+*/
+/*
+let nums = [3, 5, 7]             //uding arrow function
+let squares = nums.map((n) => {
+  return n * n
+})
+console.log(squares)
+*/
+
+/*
+var a=10
+a=20
+a=50
+console.log(a)
+*/
+
+var student={Name:"Gaurav",Address:"Google",RollNumber:12,isGraduated:true,12:123};
+console.log(student)
+console.log(student.Name)
+console.log(student.Address) 
+console.log(student.RollNumber)
+console.log(student.isGraduated)
+console.log(student[12])  //{Name:'Gaurav',Address:'Google',RollNumber:'12',isGraduated:false}|Gaurav|Google|12|true|123
