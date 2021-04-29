@@ -1731,7 +1731,3 @@ features.iseven(10)
 */
 //27 march end
 
-//28 march
-
-//myapp
-
