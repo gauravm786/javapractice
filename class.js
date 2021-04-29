@@ -1,4 +1,3 @@
-
 /*
 var student=                              
 {
@@ -79,4 +78,3 @@ var fullname=student1.getName("Mishra")
 console.log(fullname)
 //in classes we dont need function it(details,getName) can also be created without function
 */
-

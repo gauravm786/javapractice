@@ -1,3 +1,5 @@
+//Arrowfunction
+
 /*1st way to create a function
 cc()                  //calling the function
 function cc()         //declare the function
@@ -311,7 +313,7 @@ var student=
 student.getName("Mishra")
 */
 
- /*                                       //Gaurav Mishra
+/*                                        //Gaurav Mishra
 var student=
 {
     Name:"Gaurav",
@@ -357,7 +359,7 @@ var student=                              //undefined Mishra
     },
     getName: (LastName)=>
     {
-      return  this.Name+" "+LastName
+      return  this.getName+" "+LastName
     }
 };
 var fullname=student.getName("Mishra")
@@ -366,32 +368,9 @@ var hi=this.name()
 console.log(hi)
 */
 
-/*
-let nums = [3, 5, 7]
-let squares = nums.map(function (n) {
-  return n * n
-})
-console.log(squares)
-*/
-/*
-let nums = [3, 5, 7]             //uding arrow function
-let squares = nums.map((n) => {
-  return n * n
-})
-console.log(squares)
-*/
-
-/*
-var a=10
-a=20
-a=50
-console.log(a)
-*/
-
-var student={Name:"Gaurav",Address:"Google",RollNumber:12,isGraduated:true,12:123};
-console.log(student)
-console.log(student.Name)
-console.log(student.Address) 
-console.log(student.RollNumber)
-console.log(student.isGraduated)
-console.log(student[12])  //{Name:'Gaurav',Address:'Google',RollNumber:'12',isGraduated:false}|Gaurav|Google|12|true|123
+function prodofallnumber(a,b)
+{
+  return a*b
+}
+var arr=[1,2,3,4,5,6,7,8,9] 
+console.log(arr.reduce(prodofallnumber))
