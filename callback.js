@@ -2,19 +2,25 @@
 //x++ post increment,the value of x will be increnmented,but previous value of x(initial value of x) will be assigned to x
 //++x pre increment,the value of x will be incremented first and then incremented value is assigned to x
 
-/*
+
 var x=10           //10
 x=x++
 console.log(x)
 
+
+/*
 var x=10           //11
 x=++x
 console.log(x)
+*/
 
+/*
 var x=10           //11 
 x=++x //value is incremented i.e11
 console.log(x++) //but here previous value is 11,we will get 11 as output
+*/
 
+/*
 var x=10           //12 
 x=++x //value is incremented i.e11
 console.log(++x) //value is again incremented(previous value is 11),we will get 12 as output
