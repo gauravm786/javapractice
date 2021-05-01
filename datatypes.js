@@ -1676,7 +1676,7 @@ returnData=function()means we are assigining returnData with  function
 clousure means passing a function into a function,to pass function into a function we use parameter
 */
 
-//mylib.js
+//mylib.js  //note mylib.js and app.js should be worked parallely
 
 //module:-
 /*To create our own module we use module.export.function_name=function_name
@@ -1723,11 +1723,30 @@ http.createServer(myfunc).listen(8888)
 //app.js
 
 /*
-var features=require("./mylib")//this is basically user define module
-features.iseven(10)
+var features=require("./mylib")//this is basically user defined module
+features.iseven(10)    //it is used to give value in suggested file for output
 //code of mylib is imported to app.js
-//to use module syntax is var varname=require(./path)
+//to use module syntax is var varname=require(./path),where ./ gives suggestion of files you want to use
 //so if you are usingyour own library then you have to give the path
+//to use the module require keyword is used,require is a global object
 */
+
+//myapp.js  //it is used to make simple helloworld app
+
+/*
+var http=require("http")//here http module is provided by node itself,so you did not need to pass the path,you can directly write module name,
+//so it will be imported here and will be assigned to http variable
+function myfunc(request,response)//myfunc is defiined
+{
+console.log("My app got started")
+response.writeHead(300,{"content-Types":"text/plain"}) //response.writeHead opens stream and send data continuously,it basically opens a pipe from your application to the front end part,so that you can continuously send data from string 
+response.write("THE NEXT BIG THING IS BROCK LESNAR")
+response.end()//it is basically used to stop the stream
+}
+http.createServer(myfunc).listen(8888)//here myfunc will executed and registered
+
+//THe above function is a very basic way to create hello world app but in my case THE NEXT BIG THING IS BROCK LESNAR
+*/
+
 //27 march end
 

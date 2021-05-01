@@ -2,11 +2,11 @@
 //x++ post increment,the value of x will be increnmented,but previous value of x(initial value of x) will be assigned to x
 //++x pre increment,the value of x will be incremented first and then incremented value is assigned to x
 
-
+/*
 var x=10           //10
 x=x++
 console.log(x)
-
+*/
 
 /*
 var x=10           //11
@@ -64,8 +64,9 @@ console.log(result)
 
 //synchronous behaviour:-each request is executed one by one
 //asynchronous behaviour:-each request is not executed one by one
+//closure means passing one function as a parameter to other function and other function decides when to execute function whic is passed as a parameter
 
-/*
+/*                                     //output:-start,random,End,user is authenticated
 console.log("start")                   //first var is executed,then function in general
 function login(username,password)      //in this case of asynchronous,output is start,random,End,user is authenticated
 {                                      //first var is read,then console.log("start"),then function login,then set timeout
@@ -74,13 +75,15 @@ function login(username,password)      //in this case of asynchronous,output is 
         console.log("user is authenticated")
         return "validated"
     }
-    setTimeout(returnData,5000)
-    return "random"
+    setTimeout(returnData,5000)  //here setTimeout is a function which is predefined ,it executes a given function (i.e returnData)after a given particular time(i.e5s=5000ms because 1s=1000mss)
+    return "random" 
 }
 var isvalidated=login("gaurav","gaurav")
 console.log(isvalidated)
 console.log("End")
 */
+
+//what if we send the value to function and timeout and value is channged later in the code
 
 /*
 //callback function is used for asynchronous behaviour
@@ -102,8 +105,10 @@ console.log(result) //6 //value is 11 //after calling
 console.log(g)//7 //value is 12,after calling
 console.log("End")//8
 */
+
 /*
-function_name=function() means we are assigning function_name with function
+function_name=function() means we are assigning function_name with function()
 returnData=function()means we are assigining returnData with  function
 clousure means passing a function into a function,to pass function into a function we use parameter
 */
+

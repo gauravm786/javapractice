@@ -1,6 +1,8 @@
 //module:-
 /*To create our own module we use module.export.function_name=function_name
-console,module and require are global object
+console,module and require are global object.
+This whole function is used as a module
+built-in library is also used as module
 */
 
 /*
@@ -19,7 +21,9 @@ function printarr(arr)
 {
     console.log(arr)
 }
-module.exports.iseven=iseven
+
+//whatever functios is there it is exported in form of modules,so that this function can be accessed from the different file as well
+module.exports.iseven=iseven  //can get output if coded till here(its even)
 module.exports.printarr=printarr
 //module and exports is a global object
 //the above whole function is assigned with 
