@@ -35,6 +35,12 @@ console.log(x)
 */
 
 /*
+var x=10//11 //first value is incremented and then it is assigned to x as 11,after comma value of x is 11 as x is directly called(it holds previous value 11)
+x=++x ,x
+console.log(x)
+*/
+
+/*
 function returnNum(x)  //3 //initially x=1,then using x++ it is assigned and updated as 2,then using  ++x from 2 it is upated to 3
 {                      //using x it will hold previous value 3,so output is 3(1,2,3,3)
     return x,x++,++x,x
@@ -53,6 +59,7 @@ console.log(result)
 
 /*
 function returnNum()       //[ 10, 20, 30, 40, 50 ]
+{
     return [10,20,30,40,50]
 }
 result=returnNum()
@@ -64,30 +71,30 @@ console.log(result)
 
 //synchronous behaviour:-each request is executed one by one
 //asynchronous behaviour:-each request is not executed one by one
-//closure means passing one function as a parameter to other function and other function decides when to execute function whic is passed as a parameter
+//closure means passing one function as a parameter to other function and other function decides when to execute function which is passed as a parameter
 
-/*                                     //output:-start,random,End,user is authenticated
-console.log("start")                   //first var is executed,then function in general
+/*
+console.log("start")                   
 function login(username,password)      //in this case of asynchronous,output is start,random,End,user is authenticated
-{                                      //first var is read,then console.log("start"),then function login,then set timeout
+{                                      //first execution goes to console.log("start") and then vaar isvalidated,then function login,then set timeout
     returnData=function()              //then return random,then return end and after 5 sec "user is authenticated"
     {                                  //because using setTimeout returnData is executed
         console.log("user is authenticated")
         return "validated"
     }
-    setTimeout(returnData,5000)  //here setTimeout is a function which is predefined ,it executes a given function (i.e returnData)after a given particular time(i.e5s=5000ms because 1s=1000mss)
-    return "random" 
+    setTimeout(returnData,5000)
+    return "random"
 }
 var isvalidated=login("gaurav","gaurav")
 console.log(isvalidated)
 console.log("End")
 */
 
-//what if we send the value to function and timeout and value is channged later in the code
+//if we send the value to function and timeout and value is channged later in the code
 
-/*
+
 //callback function is used for asynchronous behaviour
-var g=10 //1                  //output is 11,12,EndIn callback function,13
+var g=10 //1                  //output is 11,12,End,In callback function,13
 console.log("start")    //2               
 function login()   //then we get inside the login   
 {                                      
@@ -104,10 +111,10 @@ var result=login()//3 //then login is called,then we get inside the login //6 //
 console.log(result) //6 //value is 11 //after calling
 console.log(g)//7 //value is 12,after calling
 console.log("End")//8
-*/
+
 
 /*
-function_name=function() means we are assigning function_name with function()
+functionname=function() means we are assigning functionname with function()
 returnData=function()means we are assigining returnData with  function
 clousure means passing a function into a function,to pass function into a function we use parameter
 */

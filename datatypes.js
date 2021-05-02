@@ -1564,8 +1564,9 @@ console.log(student1.name)
 student1.details()
 var fullname=student1.getName("Mishra")
 console.log(fullname)
-//in classes we dont need function it(details,getName) can also be created without function
+//in class we dont need function,(details,getName) can also be created without function
 */
+
 //21 march end
 
 //27 march
@@ -1597,8 +1598,14 @@ console.log(++x) //value is again incremented(previous value is 11),we will get 
 //now use comma operator //it is executed from left to right
 
 /*
-var x=10//11 //first value is assigned and then incremented,value is incremented after comma and it becomes then it is assigned to x
+var x=10//11 //first value is assigned and then incremented,value is incremented after comma and then it is assigned to x
 x=x++ ,x
+console.log(x)
+*/
+
+/*
+var x=10//11 //first value is incremented and then it is assigned to x as 11,after comma  value of x is 11 as x is directly called(it holds previous value 11)
+x=++x ,x
 console.log(x)
 */
 
@@ -1621,6 +1628,7 @@ console.log(result)
 
 /*
 function returnNum()       //[ 10, 20, 30, 40, 50 ]
+{
     return [10,20,30,40,50]
 }
 result=returnNum()
@@ -1632,7 +1640,9 @@ console.log(result)
 
 //synchronous behaviour:-each request is executed one by one
 //asynchronous behaviour:-each request is not executed one by one
+//closure means passing one function as a parameter to other function and other function decides when to execute function whic is passed as a parameter
 
+//callback function is used for asynchronous behaviour
 /*
 console.log("start")                   //first var is executed,then function in general
 function login(username,password)      //in this case of asynchronous,output is start,random,End,user is authenticated
@@ -1649,6 +1659,8 @@ var isvalidated=login("gaurav","gaurav")
 console.log(isvalidated)
 console.log("End")
 */
+
+//what if we send the value to function and timeout and value is channged later in the code
 
 /*
 //callback function is used for asynchronous behaviour
@@ -1671,16 +1683,18 @@ console.log(g)//7 //value is 12,after calling
 console.log("End")//8
 */
 /*
-function_name=function() means we are assigning function_name with function
-returnData=function()means we are assigining returnData with  function
-clousure means passing a function into a function,to pass function into a function we use parameter
+functionname=function() means we are assigning functionname with function()
+returnData=function()means we are assigining returnData with  function()
+
 */
 
 //mylib.js  //note mylib.js and app.js should be worked parallely
 
 //module:-
-/*To create our own module we use module.export.function_name=function_name
-console,module and require are global object
+/*To create our own module we use module.exports.function_name=function_name
+console,module and require are global object.
+This whole function is used as a module
+built-in library is also used as module
 */
 
 /*
@@ -1699,7 +1713,9 @@ function printarr(arr)
 {
     console.log(arr)
 }
-module.exports.iseven=iseven
+
+//whatever function is there it is exported in form of modules,so that this function can be accessed from the different file as well
+module.exports.iseven=iseven  //can get output if coded till here(its even)
 module.exports.printarr=printarr
 //module and exports is a global object
 //the above whole function is assigned with 
@@ -1731,7 +1747,7 @@ features.iseven(10)    //it is used to give value in suggested file for output
 //to use the module require keyword is used,require is a global object
 */
 
-//myapp.js  //it is used to make simple helloworld app
+//myapp.js  //example of  make simple helloworld app
 
 /*
 var http=require("http")//here http module is provided by node itself,so you did not need to pass the path,you can directly write module name,
@@ -1747,6 +1763,4 @@ http.createServer(myfunc).listen(8888)//here myfunc will executed and registered
 
 //THe above function is a very basic way to create hello world app but in my case THE NEXT BIG THING IS BROCK LESNAR
 */
-
 //27 march end
-
