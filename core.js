@@ -116,7 +116,7 @@ console.log("Hey,i got executed only one time") //from previous class
   //if you want to use multiple exports
 
   
-//5.export in module form
+//5. 6. code are export in module form
 module.exports=
 {
   isEven:(x)=>

@@ -1,19 +1,19 @@
 /*
-//6.import
+//6.import                                //output:-its even
 //import is latest and widely used in react
-import importcore from '../core.js' //.. it will go behind the scene(one folder back) and try to get the data
+import importcore from '../core.js' //.. it will go behind the scene(one folder back) and try to get the data //in import file is imported without using brackets
 importcore.isEven(10)
 */
 
 /*
-//"type": "module" using this module can be loaded in any file
+//"type": "module" using this("type": "module") module can be loaded in any file
 //commonjs is used for require
 //module is used for import
 */
 
-/*
-//this is the standard way of coding
 
+//this is the standard way of coding
+/*
 import http from "http"
 
 //created a server
