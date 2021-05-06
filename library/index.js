@@ -142,5 +142,3 @@ server.listen(PORT)
 In function call getUser().. I this /users endpoint got hit.
 In function call createUse() .. I this /users endpoint got hit.
 */
-
-//3 April end
