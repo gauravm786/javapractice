@@ -2202,6 +2202,7 @@ server.listen(PORT)
 */
 
 //using postman
+
 /*
 import express  from "express"        //This is import statement
 import bodyparser from "body-parser"
@@ -2233,6 +2234,7 @@ server.listen(PORT)
 //In function call createUse() .. I this /users endpoint got hit. will be printed as output in terminal
 */
 
+
 //nodemon is used when:- 
 //for exiting from the command we use ctrl+c everytime
 //to avoid this repition we use nodemon 
@@ -2249,12 +2251,12 @@ In function call getUser().. I this /users endpoint got hit.
 In function call createUse() .. I this /users endpoint got hit.
 */
 
-//routes.js
+//routes
+
 /*
 //here we are creating routes for users endpoint
 
 import express from 'express';
-//while running application the node will add express to your file
 //we need to use express for router
 
 import {getUsers,createUser} from '../controllers/users.js'
@@ -2263,7 +2265,7 @@ import {getUsers,createUser} from '../controllers/users.js'
 
 
 const router = express.Router();
-//i will need to get router which i will get from express so for that i will use constant variable
+//we will need to get router which we will get from express so for that we will use const variable
 
 router.get("/",getUsers)
 //router.get("/:id",getUserById) //it should be used as variable and hence colon is used
@@ -2274,7 +2276,7 @@ router.post("/",createUser)
 export default router //to export the user endpoint in this file  we use export default router
 */
 
-//controller
+//controllers
 
 /*
 //in controllers we define functions
@@ -2294,7 +2296,3 @@ export const createUser=(req,res)=>
     res.send("ok")
 }
 */
-
-
-
-

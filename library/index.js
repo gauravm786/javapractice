@@ -95,6 +95,7 @@ server.listen(PORT)
 
 //using postman
 
+/*
 import express  from "express"        //This is import statement
 import bodyparser from "body-parser"
 import userRouter from "./routes/users.js"
@@ -123,6 +124,8 @@ server.listen(PORT)
 //after using  http://localhost:7777/user on postman using POST ,you will get:-
 //OK will be printed as output on postman 
 //In function call createUse() .. I this /users endpoint got hit. will be printed as output in terminal
+*/
+
 
 //nodemon is used when:- 
 //for exiting from the command we use ctrl+c everytime

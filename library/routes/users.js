@@ -1,7 +1,7 @@
+/*
 //here we are creating routes for users endpoint
 
 import express from 'express';
-//while running application the node will add express to your file
 //we need to use express for router
 
 import {getUsers,createUser} from '../controllers/users.js'
@@ -10,7 +10,7 @@ import {getUsers,createUser} from '../controllers/users.js'
 
 
 const router = express.Router();
-//i will need to get router which i will get from express so for that i will use constant variable
+//we will need to get router which we will get from express so for that we will use const variable
 
 router.get("/",getUsers)
 //router.get("/:id",getUserById) //it should be used as variable and hence colon is used
@@ -19,3 +19,4 @@ router.post("/",createUser)
 //router.patch("/:id",updateUserById)
 
 export default router //to export the user endpoint in this file  we use export default router
+*/
