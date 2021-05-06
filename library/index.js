@@ -108,12 +108,13 @@ var homepage=(req,res)=>res.send("Welcome to my library") //handle http://localh
 
 server.use("/user",userRouter) 
 //here userRouter is called 
-//"/user" base endpoint is added is inside server.use,no need to use it on router.get()which is in routes folder
+//"/user" base endpoint is added inside server.use,no need to use it on router.get()which is in routes folder
 //if we use /user then call will go inside userRouter and then on routes and then users.js
 
 server.get("/",homepage)
 
 server.listen(PORT)
+//start application by listening PORT,if you will not use server.listen then your server will not start
 
 //ouput:- 
 //after using  http://localhost:7777 on postman using GET,you will get:- 
@@ -142,3 +143,56 @@ server.listen(PORT)
 In function call getUser().. I this /users endpoint got hit.
 In function call createUse() .. I this /users endpoint got hit.
 */
+
+
+//4 April
+
+//To connect API to database(mongodb) 
+//mongodb+srv://<username>:<password>@cluster0.b4muw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority(copy link from mongodb atlas)
+//create variable and assign the link to it 
+//to connect API to database(mongod),we use mongoose.connect(dbURL,{useNewUrlParser:true,useUnifiedTopology:true})
+//after that .then is used to perform operation
+
+//for hadling mongodb operation,we use mongoose
+//npm install -save mongoose(to intall mongoose)
+//after successfull connectong to the database,then only start your application
+
+import express  from "express"        //This is import statement
+import bodyparser from "body-parser"
+import userRouter from "./routes/users.js"
+import mongoose from "mongoose"
+
+const dbURL='mongodb+srv://gaurav4:gaurav786@cluster0.b4muw.mongodb.net/library?retryWrites=true&w=majority'
+mongoose.connect(dbURL,{useNewUrlParser:true,useUnifiedTopology:true})
+.then                                    //if code is successful or no error then .then method is used
+(                               
+    (result)=>
+    {
+        console.log("connected to the Database")
+        console.log("server started successfully")
+        server.listen(PORT) 
+        //if im successfully connected to my database then only start my application 
+        //if im not successfully connected to my database then don't start my application 
+        //thats why server.listen(PORT)is shifted from end of the code,inside mongodb .then() function
+    }
+)
+.catch  //if code is not successful or there is error then .catch method is used
+(
+    (err)=>
+    {
+        console.log(err)
+    }
+)
+
+const server = express()
+const PORT=7777
+server.use(bodyparser.json())
+
+var homepage=(req,res)=>res.send("Welcome to my library") //handle http://localhost:7777
+
+server.use("/user",userRouter) 
+
+server.get("/",homepage)
+
+
+
