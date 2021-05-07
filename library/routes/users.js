@@ -1,4 +1,5 @@
-//3,4,10 April
+//3,4,10,11 April
+
 /*
 //here we are creating routes for users endpoint
 
@@ -18,7 +19,9 @@ router.get("/",getUsers)
 router.get("/:id",getUserById) //it should be used as variable and hence colon is used
 router.post("/",createUser)
 router.delete("/:id",deleteUserById)//it should be used as variable and hence colon is used
-router.patch("/:id",updateUserById)
+router.patch("/:id",updateUserById) //patch is basically used to update a particular entry and update is use to update the entire entry
+
+
 
 //http://localhost:7777/user?name=gaurav&gender=male&age=22&city=Mumbai
 //here name,gender,age,city are query

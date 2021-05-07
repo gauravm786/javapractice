@@ -1,4 +1,5 @@
-//3,4,10 April
+//3,4,10,11 April
+
 /*
 //after making router and controller we create model
 //every record which will be stored inside the document that will be in the form of schema,schema is nothing but definition how it should look like
@@ -31,7 +32,7 @@ const userSchema = new Schema //new operator schema function(new Schema())     /
             type:String,
             required:true
         }
-    },{timestamps:true} //shows date and time,when schema is created on postman
+    },{timestamps:true} //shows date,when schema is created on postman
 )
 export const User=mongoose.model('User',userSchema)                     //this is create in  collectin or database
 //model is like a class and how model shoiuld look like,we defined it using schema
