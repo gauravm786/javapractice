@@ -144,7 +144,7 @@ In function call getUser().. I this /users endpoint got hit.
 In function call createUse() .. I this /users endpoint got hit.
 */
 
-
+/*
 //4 April
 
 //To connect API to database(mongodb) 
@@ -193,6 +193,43 @@ var homepage=(req,res)=>res.send("Welcome to my library") //handle http://localh
 server.use("/user",userRouter) 
 
 server.get("/",homepage)
+*/
 
+//10 April
 
+/*
+import express  from "express"        
+import bodyparser from "body-parser"
+import userRouter from "./routes/users.js"
+import mongoose from "mongoose"
+
+const dbURL='mongodb+srv://gaurav4:gaurav786@cluster0.b4muw.mongodb.net/library?retryWrites=true&w=majority'
+mongoose.connect(dbURL,{useNewUrlParser:true,useUnifiedTopology:true})
+.then                                    
+(                               
+    (result)=>
+    {
+        console.log("connected to the Database")
+        console.log("server started successfully")
+        server.listen(PORT) 
+    }
+)
+.catch  
+(
+    (err)=>
+    {
+        console.log(err)
+    }
+)
+
+const server = express()
+const PORT=7777
+server.use(bodyparser.json())
+
+var homepage=(req,res)=>res.send("Welcome to my library") //handle http://localhost:7777
+
+server.use("/user",userRouter) 
+
+server.get("/",homepage)
+*/
 

@@ -1,10 +1,12 @@
+//3,4,10 April
 /*
 //here we are creating routes for users endpoint
 
-import express from 'express';
+import express from "express"
+//while runnung the application node will try to include code of express to your code  
 //we need to use express for router
 
-import {getUsers,createUser,getUserById} from '../controllers/users.js'
+import {getUsers,createUser,getUserById,deleteUserById,updateUserById} from '../controllers/users.js'
 //to import multiple functions at same time we use import{}
 // and using '../controllers/users.js' we go back to previous folder and import function from the given folder.Here it is controller
 
@@ -15,8 +17,11 @@ const router = express.Router();
 router.get("/",getUsers)
 router.get("/:id",getUserById) //it should be used as variable and hence colon is used
 router.post("/",createUser)
-//router.delete("/:id",deleteUserById)//it should be used as variable and hence colon is used
-//router.patch("/:id",updateUserById)
+router.delete("/:id",deleteUserById)//it should be used as variable and hence colon is used
+router.patch("/:id",updateUserById)
+
+//http://localhost:7777/user?name=gaurav&gender=male&age=22&city=Mumbai
+//here name,gender,age,city are query
 
 export default router //to export the user endpoint in this file  we use export default router
 */
