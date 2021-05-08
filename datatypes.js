@@ -2961,6 +2961,10 @@ export const getUserById=(req,res)=>
     console.log("In function call getUserById.. I this /users endpoint got hit.")
     //res.send(users)
     User.findById(req.params.id) 
+    //User.findById returns promise because (req.param.id) function is executed asnynchronously
+    //by behaviour of promise it is fixed that it has two function .then() and .catch()
+    //so in future if promise has response or result then .then() function is executed
+    //if promise has error then .catch() function is executed
     .then
     (
         (result)=>
