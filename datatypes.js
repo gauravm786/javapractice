@@ -2275,8 +2275,7 @@ router.post("/",createUser)
 //router.delete("/:id",deleteUserById)//it should be used as variable and hence colon is used
 //router.patch("/:id",updateUserById)
 
-export default router //to export the user endpoint in this file  we use export default router
-*/
+export default router //router is exported to index.js*/
 
 //controllers
 
@@ -2545,8 +2544,7 @@ router.post("/",createUser)
 //router.delete("/:id",deleteUserById)//it should be used as variable and hence colon is used
 //router.patch("/:id",updateUserById)
 
-export default router //to export the user endpoint in this file  we use export default router
-*/
+export default router //router is exported to index.js*/
 //4 April end
 
 //10 April 
@@ -2825,8 +2823,7 @@ router.patch("/:id",updateUserById)
 //http://localhost:7777/user?name=gaurav&gender=male&age=22&city=Mumbai
 //here name,gender,age,city are query
 
-export default router //to export the user endpoint in this file  we use export default router
-*/
+export default router //router is exported to index.js*/
 //10 April End
 
 //11 April
@@ -3137,6 +3134,5 @@ router.patch("/:id",updateUserById) //patch is basically used to update a partic
 //http://localhost:7777/user?name=gaurav&gender=male&age=22&city=Mumbai
 //here name,gender,age,city are query
 
-export default router //to export the user endpoint in this file  we use export default router
-*/
+export default router //router is exported to index.js*/
 //11 April End
